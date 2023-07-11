@@ -271,7 +271,7 @@ tracks:
       :{release_inc} --os-name rhel
     devel_branch: rolling
     last_release: ros2
-    last_version: 1.10.9005
+    last_version: 1.11.9000
     name: googletest
     patches: null
     release_inc: '1'
