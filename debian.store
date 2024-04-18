@@ -1,1 +1,1 @@
-{"base": "7e66d64", "parent": "debian/rolling/gtest_vendor", "previous": "b1a55ae", "trim": "", "trimbase": ""}
+{"base": "05385d1", "parent": "debian/jazzy/gtest_vendor", "previous": "727192e", "trim": "", "trimbase": ""}
