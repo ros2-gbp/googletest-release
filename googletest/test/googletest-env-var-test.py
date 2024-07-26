@@ -32,7 +32,7 @@
 """Verifies that Google Test correctly parses environment variables."""
 
 import os
-from googletest.test import gtest_test_utils
+import gtest_test_utils
 
 
 IS_WINDOWS = os.name == 'nt'
@@ -85,12 +85,9 @@ class GTestEnvVarTest(gtest_test_utils.TestCase):
 
     TestFlag('break_on_failure', '1', '0')
     TestFlag('color', 'yes', 'auto')
-    SetEnvVar('TESTBRIDGE_TEST_RUNNER_FAIL_FAST', None)  # For 'fail_fast' test
-    TestFlag('fail_fast', '1', '0')
     TestFlag('filter', 'FooTest.Bar', '*')
     SetEnvVar('XML_OUTPUT_FILE', None)  # For 'output' test
     TestFlag('output', 'xml:tmp/foo.xml', '')
-    TestFlag('brief', '1', '0')
     TestFlag('print_time', '0', '1')
     TestFlag('repeat', '999', '1')
     TestFlag('throw_on_failure', '1', '0')
@@ -100,6 +97,7 @@ class GTestEnvVarTest(gtest_test_utils.TestCase):
     if IS_LINUX:
       TestFlag('death_test_use_fork', '1', '0')
       TestFlag('stack_trace_depth', '0', '100')
+
 
   def testXmlOutputFile(self):
     """Tests that $XML_OUTPUT_FILE affects the output flag."""
@@ -114,7 +112,6 @@ class GTestEnvVarTest(gtest_test_utils.TestCase):
     SetEnvVar('GTEST_OUTPUT', 'xml:tmp/foo.xml')
     SetEnvVar('XML_OUTPUT_FILE', 'tmp/bar.xml')
     AssertEq('xml:tmp/foo.xml', GetFlag('output'))
-
 
 if __name__ == '__main__':
   gtest_test_utils.Main()
