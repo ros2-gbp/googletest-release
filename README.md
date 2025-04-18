@@ -1,3 +1,28 @@
+## googletest (rolling) - 1.15.1-1
+
+The packages in the `googletest` repository were released into the `rolling` distro by running `/home/cottsay/infra_ws/install/bloom/bin/bloom-release googletest -r rolling` on `Fri, 18 Apr 2025 18:06:57 -0000`
+
+These packages were released:
+- `gmock_vendor`
+- `gtest_vendor`
+
+Version of package(s) in repository `googletest`:
+
+- upstream repository: https://github.com/ament/googletest.git
+- release repository: https://github.com/ros2-gbp/googletest-release.git
+- rosdistro version: `1.15.0-1`
+- old version: `1.15.0-1`
+- new version: `1.15.1-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.25.1`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## googletest (humble) - 1.10.9006-1
 
 The packages in the `googletest` repository were released into the `humble` distro by running `/usr/bin/bloom-release -r humble -y googletest` on `Fri, 26 Jul 2024 15:06:21 -0000`
