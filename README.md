@@ -1,3 +1,28 @@
+## googletest (rolling) - 1.16.1-1
+
+The packages in the `googletest` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --rosdistro rolling --track rolling googletest` on `Wed, 08 Apr 2026 11:11:27 -0000`
+
+These packages were released:
+- `gmock_vendor`
+- `gtest_vendor`
+
+Version of package(s) in repository `googletest`:
+
+- upstream repository: https://github.com/ament/googletest.git
+- release repository: https://github.com/ros2-gbp/googletest-release.git
+- rosdistro version: `1.16.0-1`
+- old version: `1.16.0-1`
+- new version: `1.16.1-1`
+
+Versions of tools used:
+
+- bloom version: `0.13.0`
+- catkin_pkg version: `1.1.0`
+- rosdep version: `0.26.0`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## googletest (rolling) - 1.16.0-1
 
 The packages in the `googletest` repository were released into the `rolling` distro by running `/home/cottsay/infra_ws/install/bloom/bin/bloom-release googletest -r rolling` on `Thu, 24 Apr 2025 18:42:48 -0000`
